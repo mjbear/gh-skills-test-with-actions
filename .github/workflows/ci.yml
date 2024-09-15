@@ -48,8 +48,8 @@ jobs:
       - name: Upload lint report artifact
         uses: actions/upload-artifact@v4
         with:
-          name: $artifact_name
-          path: $report_file
+          name: ${{ env.artifact_name }}
+          path: ${{ env.report_file }}
 
   test_artifacts:
     runs-on: ubuntu-latest
