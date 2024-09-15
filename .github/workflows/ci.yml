@@ -61,7 +61,7 @@ jobs:
       - name: Download lint report artifact
         uses: actions/download-artifact@v4
         with:
-          name: ${{ vars.artifact_name }}
+          name: ${{ env.artifact_name }}
       
       - name: Display lint report artifact
         shell: bash
